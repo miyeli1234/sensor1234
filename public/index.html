@@ -156,7 +156,7 @@
             const dateTimeElement = document.getElementById('dateTime');
 
             socket.on('datos', (data) => {
-                const timeLabel = new Date().toLocaleTimeString();
+                const timeLabel = new Date().toLocaleTimeString('es-PE', { timeZone: 'America/Lima' });
 
                 // Actualizar gráfico de Temperatura
                 chartTemp.data.labels.push(timeLabel);
