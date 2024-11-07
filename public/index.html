@@ -177,7 +177,7 @@
                 chartHum.update();
 
                 // Actualizar información adicional
-                dateTimeElement.textContent = `Fecha y Hora: ${data.fecha}`;
+                dateTimeElement.textContent = new Date().toLocaleString('es-PE', { timeZone: 'America/Lima' }); dateTimeElement.textContent = `Fecha y Hora: ${dateTimeElement}`;
                 nnResponseElement.textContent = data.respuesta;
 
                 // Actualizar estado de la compuerta
